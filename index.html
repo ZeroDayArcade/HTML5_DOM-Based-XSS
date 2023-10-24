@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="main.css"></link>
+    </head>
+    <body>
+        <!-- Top Bar / Profile Options -->
+        <div class="nav-bar">
+            <div class="profile-options">
+                <img class="account-actions" src="images/user.png">
+                <select name="account_actions" class="account-actions-select" 
+                    onchange="profileAction(this.value)">
+                    <option selected disabled>Profile Actions</option>
+                    <option value="0">Link Social Media Account</option>
+                    <option value="1">Delete Account</option>
+                    <option value="2">Change Password</option>
+                    <option value="3">Logout</option>
+                </select>
+            </div>
+            <div><img src="images/html5.png" class="site-logo"><h1>FREE HTML5 GAMES</h1></div>
+        </div>
+
+        <!-- Search Form -->
+        <h2 id="search_string">Search Games</h2>
+        <form>
+            <input type="text" name="search" id="search_text">
+        </form>
+
+        <!-- Mock Current Game Being Played -->
+        <div class="game-preview" id="game_preview">
+            <img src="images/hat-man-idle.gif" class="sprite-1">
+            <img src="images/woman-idle.gif" class="sprite-2">
+            <img src="images/play-now.png" class="press-enter">
+        </div>
+
+        <!-- Mock Search Results -->
+        <div class="search-results hide" id="search_results">
+            <div class="search-result" onclick="playGame()"><div class="result-name">Spooky Town</div></div>
+            <div class="search-result" onclick="playGame()"><div class="result-name">Island Escape</div></div>
+            <div class="search-result" onclick="playGame()"><div class="result-name">Haunted Night</div></div>
+            <div class="search-result" onclick="playGame()"><div class="result-name">Space Race</div></div>
+            <div class="search-result" onclick="playGame()"><div class="result-name">Love Potion</div></div>
+            <div class="search-result" onclick="playGame()"><div class="result-name">Dimension Zero</div></div>
+        </div>
+
+        <!-- Send Coins Widget -->
+        <div class="send-coins">
+            <h3>Send Coins to Friends</h3>
+            <img src="images/coin.png" class="coin-image">
+            <input type="text" placeholder="Username" id="send_to_user">
+            <input type="number" placeholder="# of Coins" id="num_coins">
+            <button onclick="sendCoins()">SEND COINS</button>
+        </div>
+
+    </body>
+    <script src="main.js"></script>
+</html>

