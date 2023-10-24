@@ -8,6 +8,8 @@ A DOM-Based XSS (Cross-Site Scripting) demo to learn about how JavaScript and HT
 
 This is a fictitious website and the games in the search results are not real. The game art used in this demo is from the good people at <a href="https://opengameart.org/">https://opengameart.org/</a>.
 
+For a more in-depth understanding of DOM-Based XSS attacks, see <a href="https://zerodayarcade.com/tutorials/dom-based-xss-attacks">this article</a> from zerodayarcade.com
+
 ## To test locally:
 Clone repo:
 ```
