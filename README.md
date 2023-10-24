@@ -17,12 +17,18 @@ python3 -m http.server 8080
 
 Then open the following in your favorite browser. I'd recommend Chrome or Brave:
 ```
-localhost:8080
+http://localhost:8080
 ```
 
 From there you can play around with the querystring to see what kind of HTML and JavaScript you can inject into the web page. These types of attacks are often carried out with link-sharing. An unsuspecting user clicks on a link that goes to a domain they trust and may have an account on. The HTML and JavaScript burried within the querystring then gets injected into the page if the developers hadn't properly sanitized the querystring parameters. 
 
-You can check out some example urls/querystrings in the `examples.txt` file that demonstrate injection with this mock website.
+For example:
+```
+http://localhost:8080/?search=%3Cimg%20src=%22notimage%22%20onerror=%22changePassword();%22%3E
+```
+This url will cause the `changePassword()` function to be triggered by just landing on the page, even though `changePassword()` is only *intended* to be called when selected in the user profile dropdown.
+
+You can check out more example urls/querystrings in the `examples.txt` file that demonstrate injection with this mock website.
 
 Examples of how to prevent injection are in the comments of the `main.js` file.
 
