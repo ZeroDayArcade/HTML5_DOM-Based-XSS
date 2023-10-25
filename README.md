@@ -15,7 +15,7 @@ For a more in-depth understanding of DOM-Based XSS attacks, see <a href="https:/
 ## To test locally:
 Clone repo:
 ```
-git clone https://github.com/ZeroDayArcade/HTML5_DOM-Based-XSS
+git clone https://github.com/ZeroDayArcade/HTML5_DOM-Based-XSS.git
 ```
 cd into project directory:
 ```
